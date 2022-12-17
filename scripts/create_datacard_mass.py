@@ -98,7 +98,8 @@ if __name__ == '__main__':
     }
 
     # output path for output datacard  directory
-    outDataCardsDir = '/storage/af/user/christiw/login-1/christiw/LLP/dedx/CMSSW_10_2_13/src/HiggsAnalysis/HSCPLimit/combine/datacards/test_mass/v2/' + fpath['test'].replace('.root','/')[fpath['test'].find('histoMass'):]
+    # make sure to change datacard version every time
+    outDataCardsDir = os.getenv('CMSSW_BASE')+ '/src/HiggsAnalysis/HSCPLimit/combine/datacards/mass/v2/' + fpath['test'].replace('.root','/')[fpath['test'].find('histoMass'):]
     os.system("mkdir -p {0}".format(outDataCardsDir))
 
 

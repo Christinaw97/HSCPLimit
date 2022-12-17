@@ -1,0 +1,16 @@
+imax 1 
+jmax 1 
+kmax * 
+shapes * * FAKE 
+--------------- 
+--------------- 
+bin 	  chD 
+observation 	   3.21 
+------------------------------ 
+bin 	 chD 	 chD 
+process 	 signal 	 bkg 
+process 	 0 	 1 	 
+rate 	 6.149228976547647 	 3.210661374760093 
+------------------------------ 
+lumi 	 lnN 	 1.2 	 - 
+bkg_est 	 lnN 	 -  	 0.8000000160219389/1.2000000011444243 
