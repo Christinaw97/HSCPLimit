@@ -1,0 +1,21 @@
+# norm 16.084523828821418 
+imax 4 
+jmax 1 
+kmax * 
+shapes * * FAKE 
+--------------- 
+--------------- 
+bin 	 chA 	 chB 	 chC 	 chD 
+observation 	 761.04 	 1442.86 	 11795370.43 	 6221536.31 
+------------------------------ 
+bin 	 chA 	 chA 	 chB 	 chB 	 chC 	 chC 	 chD 	 chD 
+process 	 sig	 bkg 	 sig	 bkg 	 sig	 bkg 	 sig	 bkg 
+process 	 0	 1	 0	 1	 0	 1	 0	 1
+rate	 1.608452e+01 	 1 	 2.985853e-01 	 1 	 3.307457e-01 	 1 	 9.211637e-01 	 1 
+------------------------------ 
+single_A    rateParam       chA     bkg      (@0*@2/@1)                    single_B,single_C,single_D 
+single_B    rateParam       chB     bkg     1442.86        [0,10100.00] 
+single_C    rateParam       chC     bkg     11795370.43        [0,82567593.01] 
+single_D    rateParam       chD     bkg     6221536.31        [0,43550754.15] 
+norm rateParam * sig 1  
+single_lumi 	 lnN 	 1.2	 -  	 1.2	 -  	 1.2	 -  	 1.2	 -  
